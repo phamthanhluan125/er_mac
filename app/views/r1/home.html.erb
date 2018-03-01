@@ -1,0 +1,159 @@
+<div class="wrapper">
+  <nav class="header">
+    <a id="logo" href=""><%= image_tag "images/Logo.png" %></a>
+    <span class="menu-left">
+      <span class="dropdown menu-item">
+        <a class="dropdown-toggle" type="button" data-toggle="dropdown">Hire Freelabcers<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+      </span>
+      <span class="dropdown menu-item">
+        <a class="dropdown-toggle" type="button" data-toggle="dropdown">Find Work<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+      </span>
+      <span class="dropdown menu-item">
+        <a class="dropdown-toggle" type="button" data-toggle="dropdown">How it Works<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+      </span>
+      <span class="menu-item">
+        <span class="header-search">
+          <span class="glyphicon">&#xe003;</span>
+          <%= text_field_tag "input-search", "", placeholder: "Find Freelabcers..." %>
+        </span>
+      </span>
+    </span>
+    <span class="menu-right">
+      <%= button_tag "Post a Project", id: "post-project" %>
+      <span class="header-line">|</span>
+      <a href="" class="menu-item">Sign In</a>
+      <a href="" class="menu-item">Sign Up</a>
+    </span>
+  </nav>
+
+
+  <div class="body">
+    <section class="screen-mockup sec-1">
+      <div class="container">
+        <div class="content">
+          <div class="col-sm-6 left">
+            <h1>Don't Just Dream, Let's Do</h1>
+            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley.</h2>
+            <div class="group-button">
+              <%= button_tag "I want to Hire", class: "btn-general-1 want-hire" %>
+              <%= button_tag "I want to Work", class: "btn-general-2 want-work" %>
+            </div>
+          </div>
+          <div class="col-sm-4 right">
+            <%= image_tag "images/sec-1-right.png" %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen-mockup sec-2">
+      <div class="container">
+        <h1 class="text-center">How it Works</h1>
+        <div class="col-sm-6 left">
+          <p>Post your project and receive competitive bids from freelancers within minutes. Our reputation system will make it easy to find the perfect freelancer for your job. It's the simplest and safest way to get work done online.</p>
+          <br>
+          <p>We have millions of Freelancers for thousands of freelance jobs: from web design, mobile app development, virtual assistants, product manufacturing and graphic design. Whatever your needs, there will be a freelancer to get it done.</p>
+          <br>
+          <h2>Employer Benifits</h2>
+          <li class="check-item">Only pay for the work when it is completed in a safe and secure manner. Release your payment when you are 100% satisfied with the work provided.
+          </li>
+          <li class="check-item">You’ll receive bids for free from our talented freelancers within seconds.
+          </li>
+          <li class="check-item">Keeping up-to-date with our 24/7 support, time tracker, and mobile app.
+          </li>
+          <li class="check-item">Browse samples of previous work.
+          </li>
+          <li class="check-item">Chat for free.</li>
+        </div>
+        <div class="col-sm-6 right">
+          <%= image_tag "images/sec-2-right.png" %>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen-mockup sec-3">
+      <div class="container">
+        <h1 class="text-center">Take the First Step</h1>
+        <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.
+        </p>
+        <br>
+        <div class="group-steps">
+          <div class="col-sm-3 step-item text-center">
+            <span class="glyphicon glyphicon-plus icon"></span>
+            <h3>Website Development</h3>
+            <p class="price">Stating form $ 100</p>
+          </div>
+          <div class="col-sm-3 step-item text-center">
+            <span class="glyphicon glyphicon-edit icon"></span>
+            <h3>Graphic Design</h3>
+            <p class="price">Stating form $ 90</p>
+          </div>
+          <div class="col-sm-3 step-item text-center">
+            <span class="glyphicon glyphicon-stats icon"></span>
+            <h3>Internet Marketing</h3>
+            <p class="price">Stating form $ 190</p>
+          </div>
+          <div class="col-sm-3 step-item text-center">
+            <span class="glyphicon glyphicon-phone icon"></span>
+            <h3>Mobile App</h3>
+            <p class="price">Stating form $ 60</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <nav class="footer">
+    <div class="top">
+      <div class="container">
+        <div class="col-sm-3 top-item">
+          <h3>About Us</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+          </p>
+        </div>
+        <div class="col-sm-3 top-item">
+          <h3>Quick Links</h3>
+          <li class="list-item">Success Stories</li>
+          <li class="list-item">Take the First Step</li>
+          <li class="list-item">Get Started in Minutes</li>
+          <li class="list-item">We Are Also Featured On</li>
+          <li class="list-item">Browse Top 10 Freelancer.</li>
+        </div>
+        <div class="col-sm-3 top-item">
+          <h3>Support</h3>
+          <li class="list-item">Live Chat</li>
+          <li class="list-item">Contact Us</li>
+          <li class="list-item">Support HQ</li>
+          <li class="list-item">Trust & Safety</li>
+          <li class="list-item">Submit A Ticket</li>
+        </div>
+        <div class="col-sm-3 top-item">
+          <h3>About Us</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <%= image_tag "images/@.png" %> 2018 Exchange Resources
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,182 @@
+$main_color: #1fb5ad;
+
+.btn-general-1 {
+  border-radius: 20px;
+  color: white;
+  background-color: $main_color;
+  padding: 10px 25px;
+  border: none;
+  box-shadow: 0px 3px 7px 0px $main_color;
+}
+.btn-general-2 {
+  @extend .btn-general-1;
+  background-color: #ffffff00;
+  box-shadow: 0px 1px 7px 0px gray;
+  border: solid 1px white;
+}
+
+.wrapper {
+  font-size: 15px;
+  a {
+    color: black ;
+  }
+  .header {
+    position: relative;
+    height: 90px;
+    background-color: #ffffff;
+    z-index: 1000;
+    #logo {
+      display: block;
+      float: left;
+      padding-left: 5%;
+      padding-top: 20px;
+    }
+    .menu-left {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-left: 50px;
+      .menu-item {
+        padding: 0 10px;
+        .header-search {
+          border: solid 1px $main_color;
+          border-radius: 20px;
+          padding: 10px;
+        }
+        input {
+          border: none;
+          width: 150px;
+        }
+      }
+    }
+    .menu-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+      #post-project {
+        @extend .btn-general-1;
+      }
+      .header-line {
+        padding: 0 20px;
+        font-size: 20px;
+        font-weight: 100;
+        color: gray;
+      }
+      .menu-item {
+        color: $main_color;
+        padding-right: 15px;
+      }
+    }
+  }
+  .body {
+    .screen-mockup {
+      position: relative;
+    }
+    .sec-1 {
+      background-color: #666666;
+      height: 750px;
+      .container {
+        .content {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          color: white;
+          .left {
+            float: left;
+            h3 {
+              font-weight: 200;
+            }
+            .group-button {
+              padding-top: 50px;
+              .want-hire {
+                margin-right: 10px;
+                box-shadow: 0px 3px 7px 0px black;
+              }
+              .want-work {
+                margin-left: 10px;
+              }
+            }
+          }
+          .right {
+            float: right;
+          }
+        }
+      }
+    }
+    .sec-2 {
+      background-color: #ffffff;
+      height: 750px;
+      .container {
+        h1 {
+          padding-top: 100px;
+          padding-bottom: 50px;
+        }
+        .left {
+          list-style-image: url('images/icofont-ui-clip-board.png');
+          p {
+            font-weight: 200;
+            font-size: 15px;
+          }
+          .check-item {
+            font-size: 15px;
+            padding-bottom: 10px;
+          }
+        }
+        .right {
+
+        }
+      }
+    }
+    .sec-3 {
+      background-color: #f4f6f9;
+      height: 650px;
+      .container {
+        h1 {
+          padding-top: 100px;
+          padding-bottom: 50px;
+        }
+        .group-steps {
+          padding-top: 30px;
+          .step-item {
+            .icon {
+              font-size: 80px;
+              border: solid 1px $main_color;
+              padding: 30px 30px 35px 35px;
+              border-radius: 100px;
+            }
+            .price {
+              color: $main_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    .top {
+      position: relative;
+      height: 400px;
+      background-color: #f0f0f0;
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .top-item {
+        list-style-image: url('images/icofont-dotted-right.png');
+        li {
+          text-transform: uppercase;
+          padding: 5px 0;
+        }
+      }
+    }
+    .bottom {
+      height: 90px;
+      background-color: white;
+      text-align: center;
+      padding-top: 35px;
+    }
+  }
+}
